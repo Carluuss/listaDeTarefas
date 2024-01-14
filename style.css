@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10em;
+    width: 20%;
+    margin-left: 10em;
+}
+
+header img {
+    display: block;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+header nav {
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin-left: 30em;
+}
+
+main section {
+    display: flex;
+    text-align: center;
+}
+
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.lista {
+    display: flex;
+}
+
+.dia, .noite {
+    padding: 60px;
+}
+
