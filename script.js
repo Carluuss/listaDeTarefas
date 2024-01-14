@@ -1,16 +1,13 @@
-function adicionarTarefaDia() {
-    let tarefa = document.getElementById("tarefa").value;
-    let lista = document.getElementById("listaDia");
+function adicionarTarefa(DoN) {
+    let tarefa = document.getElementById("tarefa");
+    let lista = document.getElementById("lista" + DoN);
     let item = document.createElement("li");
-    item.innerText = `${tarefa}`;
-    lista.appendChild(item);
-
+    item.innerHTML = `<span   class="marcacao" onclick="tarefaConcluida()">${tarefa.value}<span/>`;
+    lista.appendChild(item)
 }
 
-function adicionarTarefaNoite() {
-    let tarefa = document.getElementById("tarefa").value;
-    let lista = document.getElementById("listaNoite");
-    let item = document.createElement("li");
-    item.innerText = `${tarefa}`;
-    lista.appendChild(item);
+function tarefaConcluida(){
+    let p = document.querySelector("span");
+    p.style.textDecoration = 'line-through';
+    p.style.color = 'red';
 }

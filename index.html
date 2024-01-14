@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <img src="https://via.placeholder.com/320x320" alt="">
-        <h1>Nome*</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero veniam esse doloremque laudantium asperiores, quae tempore voluptates? Consequuntur distinctio eum optio, sit totam doloremque est quaerat, culpa maxime repellendus at!</p>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-            </ul>
-        </nav>
+        <div>
+            <h1>Nome*</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero veniam esse doloremque laudantium
+                asperiores, quae tempore voluptates? Consequuntur distinctio eum optio, sit totam doloremque est
+                quaerat, culpa maxime repellendus at!</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
             <div class="conteudo">
-                <h2>Lista de Tarefa</h2>
-                <input type="text" placeholder="Digite uma tarefa" id="tarefa">
+                <div>
+                    <h2>Lista de Tarefa</h2>
+                    <input type="text" placeholder="Digite uma tarefa" id="tarefa">
+                </div>
                 <div class="lista">
                     <div class="dia">
-                        <button type="button" onclick="adicionarTarefaDia()">Adicionar</button>
+                        <button type="button" onclick="adicionarTarefa('Dia')">Adicionar</button>
                         <h3>Dia</h3>
                         <ul id="listaDia">
 
                         </ul>
                     </div>
                     <div class="noite">
-                        <button type="button" onclick="adicionarTarefaNoite()">Adicionar</button>
+                        <button type="button" onclick="adicionarTarefa('Noite') ">Adicionar</button>
                         <h3>Noite</h3>
                         <ul id="listaNoite">
 
@@ -54,4 +62,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
