@@ -1,91 +1,142 @@
 * {
     padding: 0;
-    margin: 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin-top: 2em;
     display: flex;
-    padding: 50px;
-    background-color: #222426;
-    color: white;
+    overflow: hidden;
 }
 
 header {
+    width: 60%;
+}
+
+header div {
+    width: 70%;
+    height: 71vw;
+    background-color: rgb(38, 168, 228);
+    padding: 10px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
-    padding-left: 50px;
-
+    color: #fff;
 }
 
-header>div {
-    width: 40vw;
+header h1 {
+    padding: 20px;
 }
 
-header>img {
-    border-radius: 100%;
-}
-
-header li {
+header a {
+    color: #fff;
     text-decoration: none;
+}
+
+header a:hover {
+    color: rgb(34, 34, 212);
+}
+
+header img {
+    border-radius: 50%;
+    display: block;
+    border: 8px solid #fff;
+    width: 300px;
+}
+
+header ul {
     list-style: none;
+    padding-top: 40px;
 }
 
-header p {
-    text-decoration: none;
-
+main section {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+    padding: 10px;
 }
 
-header nav>ul>li>a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    border-bottom: 1px solid white;
-    transition: .5s;
-}
-
-header nav>ul>li>a:hover {
-    color: blue;
-    border-color: blue;
-
-}
-
-.conteudo {
+ .conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    padding: 10px;
+    text-align: center;
+    background-color: #76b4ee;
+    border-radius: 15px;
+    margin: 0px 20em;
+    width: 60em auto;
+    height: 30em auto;
+}
+.conteudo h2 {
+    font-size: 28pt;
+    margin-bottom: 20px;
 }
 
-.conteudo>div>input {
-    padding: .5em .9em;
-    font-size: 15px;
-    border-radius: 10px;
-    border: 1px solid black;
+.conteudo div {
+    padding: 10px;
+}
+
+.conteudo input{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 .lista {
     display: flex;
-    gap: 5em;
-    text-align: center;
+    padding: 10px;
 }
 
+
+.lista div {
+    padding: 10px;
+    margin: 20px;
+}
 
 .lista button {
-    border: none;
-    background-color: none;
-    padding: .3em .7em;
-    border-radius: 15px;
     cursor: pointer;
-    font-size: 20px;
-    transition: .5s;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 18px;
 }
 
-.lista button:hover {
-    background-color: black;
-    color: white;
+.lista div {
+    display: flex;
+    align-items: center;
+}
+
+.lista span {
+    border-bottom: 1px solid rgb(32, 21, 177);
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    overflow-wrap: break-word;
+    
+}
+
+.lista span:hover {
+    color: red;
+    text-decoration: line-through;
+}
+
+.lista .btnRemover {
+    margin: 10px;
+    font-size: 18px
+}
+
+.lista ul {
+    width: 90%;
+}
+
+
+.dia, .noite {
+    display: flex;
+    flex-direction: column;
+    
 }
 
